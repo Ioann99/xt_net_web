@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .RegForm {
+            width: 500px;
+            height: 315px;
+            background-color: cornflowerblue;
+            border-style: solid;
+            border-width: 0;
+            color: white;
+            font-size: 22px;
+        }
+
+        .title {
+            font-family: Calibri;
+            font-size: 32px;
+            padding: 25px 15px 10px 20px;
+        }
+
+        input {
+            width: 400px;
+            display: block;
+        }
+
+        label {
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .email {
+            width: 400px;
+            display: block;
+        }
+
+        .password {
+            width: 175px;
+        }
+
+        .button {
+            background-color: palegoldenrod;
+            margin-left: 20px;
+            font-size: 18px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form class="RegForm">
+    <div class="title">Регистрация</div>
+    <hr>
+    <label class="email">E-mail
+            <input class="email" type="email">
+            </input>
+    </label>
+    <label>Пароль
+        <input class="password" type="password"/>
+    </label>
+    <label>Ещё раз
+        <input class="password" type="password"/>
+    </label>
+    <button class="button">Отправить</button>
+</form>
+</body>
+</html>

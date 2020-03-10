@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .bigsize {
+            margin: 30px auto;
+            width: 220px;
+            padding: 30%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            background-color: cornflowerblue;
+            border: 3px solid lightblue;
+        }
+
+        .c-box--arrow-top {
+            position: relative;
+            z-index: 10;
+        }
+
+        .c-box--arrow-top::after,
+        .c-box--arrow-top-inner::after {
+            content: '';
+            width: 0;
+            height: 0;
+            display: block;
+            position: absolute;
+            z-index: 10;
+            border: 0;
+            border-left: 30px solid transparent;
+            border-right: 30px solid transparent;
+            margin-left: -30px;
+            left: 50%;
+            border-bottom: 30px solid lightblue;
+            top: -33px;
+        }
+        .c-box--arrow-top,
+        .c-box--arrow-top-inner {
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
+        .c-box--arrow-top-inner::after {
+            border-left: 27px solid transparent;
+            border-right: 27px solid transparent;
+            margin-left: -27px;
+            border-bottom: 27px solid cornflowerblue;
+            top: -26px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="bigsize c-box--arrow-top">Дистанции огромного размера</div>
+<div class="bigsize c-box--arrow-top-inner"></div>
+</body>
+</html>
