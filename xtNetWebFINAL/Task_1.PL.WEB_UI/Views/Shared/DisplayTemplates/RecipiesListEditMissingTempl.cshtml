@@ -1,0 +1,21 @@
+﻿@model List<Task_1.PL.WEB_UI.Models.Recipie.RecipieVM>
+<table>
+   @foreach (var recipie in Model)
+    {
+        @:<tr>
+            @:<td>
+                @Html.DisplayFor(ModelItem => recipie.Title)
+            @:</td>
+        @:</tr>
+    }
+   @foreach (var recipie in Model)
+   {
+        @:<tr>
+            @:<td>
+                @Html.DisplayFor(ModelItem => recipie.Description)
+            @:</td>
+        @:</tr>
+    }
+
+</table>
+
