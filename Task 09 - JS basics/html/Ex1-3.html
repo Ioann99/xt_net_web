@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Task 9.1</title>
+</head>
+
+<style>
+    .secondtask {
+        margin-top: 150px;
+    }
+
+    .thirdtask {
+        margin-top: 150px;
+    }
+
+    .conatiner_select_left
+    {
+        display: block;
+        position: absolute;
+        margin: 0 0 0 0;
+        width: 100px;
+        overflow: hidden;
+    }
+
+    .buttons_container
+    {
+        position: absolute;
+        margin: 0 0 0 100px;
+        width: 100px;
+    }
+
+    .button_style
+    {
+        width: 50px;
+    }
+
+    .conatiner_select_right {
+        display: block;
+        position: absolute;
+        margin: 0 0 0 150px;
+        width: 100px;
+        overflow: hidden;
+    }
+
+    .headNameAviable {
+        margin-left: 20px;
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .headNameSelected {
+        display: inline-block;
+        margin-left: 100px;
+        font-weight: bold;
+    }
+</style>
+
+
+<body>
+<p>Task 1</p>
+<div>
+    Input:
+    <input id="instr" type="text" style="width: 250px"/>
+    <button id="handlebtn">Do</button>
+</div>
+<div>
+    <div style="width:114px; display: inline-block">
+        Output:
+    </div>
+    <div id="result" style="display: inline-block"></div>
+</div>
+
+
+<div class="secondtask">
+    <p>Task 2</p>
+    <div>
+        Input:
+        <input id="instr2" type="text" style="width: 250px" />
+        <button id="handlebtn2">Calculate</button>
+    </div>
+    <div>
+        <div style="width:114px; display: inline-block">
+            Output:
+        </div>
+        <div id="result2" style="display: inline-block"></div>
+    </div>
+</div>
+
+
+<div class="thirdtask">
+    <p>Task 3</p>
+    <div>
+        <div class="headNameAviable">Aviable</div>
+        <div class="headNameSelected">Selected</div>
+        <select size="5" class="conatiner_select_left" id="container_1">
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+            <option>Option 4</option>
+            <option>Option 5</option>
+        </select>
+
+        <div class="buttons_container">
+            <input type="button" value=">>" class="button_style" id="btn_all_to_right"/>
+            <br />
+            <input type="button" value=">" class="button_style" id="btn_to_right"/>
+            <br />
+            <input type="button" value="<" class="button_style" id="btn_to_left"/>
+            <br />
+            <input type="button" value="<<" class="button_style" id="btn_all_to_left"/>
+        </div>
+
+        <select size="5" class="conatiner_select_right" id="container_2">
+        </select>
+    </div>
+</div>
+<script src="../scripts/Ex1.js"></script>
+<script src="../scripts/Ex2.js"></script>
+<script src="../scripts/Ex3.js"></script>
+</body>
+</html>

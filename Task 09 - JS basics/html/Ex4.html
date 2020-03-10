@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Task 9.4 Web Gallery</title>
+</head>
+<body>
+<style>
+    body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .buttons_container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100px;
+        border: 1px solid black;
+    }
+
+    .button_style {
+        width: 50px;
+    }
+
+    .content_container {
+        position: absolute;
+        margin-left: 100px;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 1px solid black;
+    }
+
+    .frame_container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        border: 1px solid black;
+    }
+
+    .dialog_container_visible {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 300px;
+        border: 1px solid black;
+        display: block;
+        z-index: 3;
+    }
+
+    .dialog_container_hidden {
+        display: none;
+    }
+</style>
+
+<dialog id="finaly_dialog" class="dialog_container_hidden">
+        Slideshow is over
+        <br />
+        Whould you like to repeat?
+        <br />
+        <br />
+        <button id="btn_repeat">Repeat</button>
+        <button id="btn_close">Close and Exit</button>
+</dialog>
+
+<div class="buttons_container">
+    <button id="btn_prev" class="button_style">Prev</button><br>
+    <button id="btn_stop" class="button_style">Stop</button><br>
+    <button id="btn_play" class="button_style">Play</button><br>
+    <div id="timer_display"></div>
+</div>
+<div class="content_container">
+    <iframe id="page_container" class="frame_container" src="Task_4_pages/inner_page_1.html"></iframe>
+</div>
+
+<script src="../scripts/Ex4.js"></script>
+</body>
+</html>
